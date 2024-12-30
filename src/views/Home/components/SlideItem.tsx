@@ -11,7 +11,6 @@ const SildItem = ({ data, images, setImages }: SliderProps) => {
   const rotateRows = useTransform(x, [-150, 0, 150], [-18, 0, 18]);
 
   const isFront = data.id === images[0]?.id;
-
   const offset = isFront ? 0 : Number(data.id) % 2 === 0 ? -6 : 6;
   const rotate = useTransform(rotateRows, (value) => `${value + offset}deg`);
 
@@ -45,8 +44,8 @@ const SildItem = ({ data, images, setImages }: SliderProps) => {
           gridRow: 1,
           gridColumn: 1,
           x,
-          opacity: opacity as any,
-          rotate: rotate as any,
+          opacity: opacity.get() as number,
+          rotate: rotate.get() as string,
         }}
         className="rounded-xl object-contain cursor-grab active:cursor-grabbing"
       />
