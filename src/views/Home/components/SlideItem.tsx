@@ -11,7 +11,7 @@ const SildItem = ({ data, images, setImages }: SliderProps) => {
   const rotateRows = useTransform(x, [-150, 0, 150], [-18, 0, 18]);
 
   const isFront = data.id === images[0]?.id;
-  const offset = isFront ? 0 : Number(data.id) % 2 === 0 ? -6 : 6;
+  const offset = isFront ? 0 : Number(data.id) % 2 === 0 ? -4 : 4;
   const rotate = useTransform(rotateRows, (value) => `${value + offset}deg`);
 
   const handelDrag = () => {
@@ -31,12 +31,12 @@ const SildItem = ({ data, images, setImages }: SliderProps) => {
     <>
       <MotionImage
         src={data.url}
-        width={300}
-        height={400}
+        width={400}
+        height={450}
         drag="x"
         dragConstraints={{
-          left: 0,
-          right: 0,
+          left: 10,
+          right: 10,
         }}
         onDragEnd={handelDrag}
         alt={data.title}

@@ -23,7 +23,7 @@ const Slider = () => {
   if (error) return <>Error</>;
 
   return (
-    <div className="min-h-screen w-screen bg-red-50 grid place-items-center">
+    <div className="min-h-screen w-screen bg-gray-800 grid place-items-center">
       {images?.map((item) => (
         <SildItem
           key={item.id}
