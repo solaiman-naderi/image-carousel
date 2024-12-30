@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Image Slider Carousel (Next.js, TailwindCSS, Framer Motion)
 
-## Getting Started
+This project is a customizable image slider carousel built using **Next.js**, **TailwindCSS**, and **Framer Motion** for smooth animations. It provides a clean, responsive slider with intuitive transitions, supporting both manual and automatic sliding.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Smooth Animations**: Uses Framer Motion for smooth and easy-to-configure animations.
+- **Responsive**: Fully responsive design with TailwindCSS.
+- **Autoplay**: Option to automatically cycle through images.
+- **Customizable**: Easily tweak styles and configurations.
+- **Touch Support**: Works well on mobile devices with swipe support.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Image Slider Carousel](./public/demo.gif)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Follow the steps below to integrate the image slider into your Next.js project.
