@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, PanInfo } from "framer-motion";
 import { imageVariants, positions } from "../constants";
 
 interface SliderProps {
@@ -57,7 +57,7 @@ const Slider: React.FC<SliderProps> = ({
     resetAutoPlay();
   };
 
-  const handleDragEnd = (event: any, info: any) => {
+  const handleDragEnd = (event: MouseEvent | TouchEvent, info: PanInfo) => {
     if (info.offset.x < -50) handleNext();
     else if (info.offset.x > 50) handleBack();
   };
