@@ -1,7 +1,7 @@
 import Slider from "@/views/Home/components";
 
 const App = () => {
-  const images = ["/123.jpeg", "/1.jpg", "/2.webp", "/3.png", "/123.jpeg"];
+  const images = ["/123.jpeg", "/1.jpg", "/4.png", "/3.png", "/5.png"];
 
   return (
     <div>

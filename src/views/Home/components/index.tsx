@@ -89,26 +89,24 @@ const Slider: React.FC<SliderProps> = ({
           <motion.img
             src={image}
             alt={`Slide ${index}`}
-            className="rounded-xl shadow-lg cursor-grab object-cover"
+            className="rounded-xl shadow-lg cursor-grab object-cover max-sm:max-w-[250px] w-full max-w-[480px] h-[300px]"
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             onDragEnd={handleDragEnd}
-            style={{
-              width: "100%",
-              maxWidth: "400px",
-              height: "auto",
-              maxHeight: "400px",
-            }}
           />
           <motion.div
-            className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded-lg"
+            className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 lg:p-4 rounded-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <h2 className="text-lg font-bold">Sample Text {index + 1}</h2>
-            <p className="text-sm">Description for image {index + 1}</p>
+            <h2 className="text-sm md:text-lg font-bold">
+              Sample Text {index + 1}
+            </h2>
+            <p className="text-xs md:text-sm">
+              Description for image {index + 1}
+            </p>
           </motion.div>
         </motion.div>
       ))}
