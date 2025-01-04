@@ -1,9 +1,19 @@
 import Slider from "@/views/Home/components";
 
-export default function Home() {
+const App = () => {
+  const images = ["/123.jpeg", "/1.jpg", "/2.webp", "/3.png", "/123.jpeg"];
+
   return (
-    <>
-      <Slider />
-    </>
+    <div>
+      <Slider
+        images={images}
+        autoPlay={true}
+        autoPlayInterval={4000}
+        transitionDuration={0.8}
+        showDots={true}
+      />
+    </div>
   );
-}
+};
+
+export default App;
